@@ -1,0 +1,163 @@
+@font-face {
+    font-family: font;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* font-family: font; */
+}
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+#footer{
+    position: absolute;
+    bottom: 70px;
+    color: white;
+    font-size:15px;
+    text-align: center;
+    width: 40vw;
+}
+.row
+{
+    display: flex;
+    flex-direction: column;
+}
+#row1{
+    height: 40vh;
+    width: 60vw;
+    background-color: rgb(243, 243, 237);
+    padding: 80px 50px;
+    padding-right: 160px;
+}
+h1{
+    margin-top: 50px;
+    font-size: 1.9rem;
+}
+#row2{
+    width: 60vw;
+    height: 35vh;
+    /* background-color: aliceblue; */
+    padding: 20px 50px;
+    box-shadow: 0px 4px 10px rgb(102, 102, 102);
+}
+h2{
+    margin-bottom: 20px;
+    width: 100%;
+}
+form{
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: ; */
+    padding-right: 100px;
+    padding-left: 20px;
+}
+.input{
+    width: 300px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 4px;
+}
+input{
+    height: 28px;
+    width: 250px;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid rgb(204, 201, 201);
+    font-size: 16px;
+}
+label{
+    color: rgb(82, 81, 81);
+}
+#row3{
+    background-color: rgb(243, 243, 237);
+    height: 30vh;
+    padding: 50px;
+}
+button{
+    /* margin: 40px 50px; */
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 600;
+}
+section{
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+.green{
+    color: #596D48;height: 20px;
+    width: 50px;
+    font-weight: 700;
+}
+
+#odin{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 200px;
+    left: 0px;
+    height: 200px;
+    width: 40vw;
+    font-size: 100px;
+    color: white;
+    font-family: font;
+}
+#odinimg{
+    position: absolute;
+    top: -160px;
+    left: 20px;
+    scale: 0.3;
+}
+#span
+{
+    position: relative;
+    top: 50px;
+    margin-left: 280px;
+}
+input:valid{
+    border: 2px solid green;
+}
+input:invalid{
+    border: 2px solid red;
+}
+input:focus{
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 2px 2px 5px rgb(152, 150, 150);
+}
+.input{
+    position: relative;
+}
+input + span{
+    position: absolute;
+    top: 20px;
+    left: 260px;
+}
+input:invalid + span::before{
+    content: "x";
+    color: red;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input:valid + span::before{
+    content: "✔";
+    color: green;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+span > a{
+    color: white;
+}

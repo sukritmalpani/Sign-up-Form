@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+    <div class="img">
+        <div id="img1">
+            <img src="images/background.jpg" alt="" style="height: 100vh;width: 40vw;position: relative;z-index: -1;">
+        </div>
+        <div id="odin">
+            <img src="images/odin-lined.png" alt="" id="odinimg">
+            <span id="span">ODIN</span>
+        </div>
+            <span id="footer">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></span>
+    </div>
+    <div class="row">
+        <div id="row1">
+            <h1>This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams.</h1>
+            <h1>Sign up now to get started</h1>
+        </div>
+        <div id="row2">
+            <form action="">
+                <h2>Let's do this!</h2>
+                <div class="input">
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" id="firstname" required>
+                    <span></span>
+                </div>
+                <div class="input">
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" id="lastname" required>
+                    <span></span>
+                </div>
+                <div class="input">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" required>
+                    <span></span>
+                </div>
+                <div class="input">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" pattern="[0-9]{10}" required>
+                    <span></span>
+                </div>
+                <div class="input" style="position: relative;">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" required>
+                    <span></span>
+                </div>
+                <span id="message" style="color:red;position: absolute; top: 700px;"></span>
+                <div class="input">
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm_password" required>
+                    <span></span>
+                </div>
+        </div>
+        <div id="row3">
+            <button id="button">Create Account</button>
+            <section class="footer">Already have an account?<span class="green"> Log In</span></section>
+        </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
